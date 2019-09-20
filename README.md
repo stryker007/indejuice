@@ -1,2 +1,2 @@
-# php-test
+# Simple PHP Test
 Simple PHP Test
