@@ -17,4 +17,4 @@ This test has been designed with three simple tasks to assess basic PHP proficie
 
 ## Submission
 
-Send a link to your Git repository to: tech@indejuice.com
+Send the link of your Git repository to: tech@indejuice.com
