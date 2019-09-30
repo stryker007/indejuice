@@ -6,7 +6,7 @@
      *  Description : Generate a sentence listing out all items provided in an array.
      *  
      *  Parameters  : (string)               start         - The start of the sentence
-     *                (array[string])        sentence      - The list of items
+     *                (array[string])        items         - The list of items
      *                (string/array[string]) append        - (optional) item types to be appended to each item
      * 
      *  Return      : string
