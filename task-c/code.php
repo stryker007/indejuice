@@ -43,7 +43,26 @@
 
     
     class Counter {
+        private $_count = 0;
         
-        
+        function __construct($count = 0)
+        {
+            $this->_count = $count;
+        }
 
+        public function count($count = 1)
+        {
+            $this->_count += $count;
+        }
+
+        public function get()
+        {
+            return $this->_count;
+        }
+
+        public function reset()
+        {
+            $this->_count = 0;
+        }
     }
+    

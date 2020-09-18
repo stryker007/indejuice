@@ -18,8 +18,10 @@
      */
     
     
-    function containsWord(){
-        
+    function containsWord($aWord = null, $aSentence = null){
+        if (preg_match("/\b$aWord\b/i", $aSentence) !== 0) {
+            return true;
+        }
 
-
+        return false;
     }

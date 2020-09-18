@@ -19,8 +19,28 @@
      */
 
     
-    function generateSentence(){
-        
+    function generateSentence($start = null, $items = array(), $append = null){
+        $returnString = $start . ": ";
 
+        while ($item = array_shift($items))
+        {
+            if (count($items) > 1) {
+                $separator = ", ";
+            } elseif (count($items) == 1) {
+                $separator = " and ";
+            } else {
+                $separator = ".";
+            }
 
+            if (is_string($append))
+            {
+                $returnString .= $item . " " . $append . $separator;
+            } elseif (is_array($append)) {
+                $returnString .= $item . " " . array_shift($append) . $separator;
+            } else {
+                $returnString .= $item . $separator;
+            }
+        }
+
+        return $returnString;
     }
